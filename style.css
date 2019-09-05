@@ -13,6 +13,7 @@ html {
   width: 150px;
   height: 100%;
   float: left;
+  
 }
 
 .navList li a {
@@ -24,15 +25,14 @@ html {
 }
 
 .navList li a:hover {
-  color: #fff;
+  color: white;
   background-color: #aaa;
 }
 
-.navList li a[href="index.html"] {
-  color: #fff;
+.active {
   background-color: #000;
+  color:white;
 }
-
 .content {
   height: 100%;
   overflow: auto;
@@ -43,4 +43,5 @@ html {
 }
 h1, .aboutCatering {
   font-family: 'Lora', serif;
+  align: middle;
 }
