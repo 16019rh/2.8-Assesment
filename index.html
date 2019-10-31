@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Recipes Online">
+    <meta name="keywords" content="Recipes,Cupcakes,Free,Cake,Pancakes,Student">
+    <meta name="author" content="Ryan Hill">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,20 +18,68 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>  
-  <!-- Nav Bar -->
+
+  
   <body>
-   <ul class="navList aboutCatering">
-      <li><a class="w3-black" href="index.html">Home</a></li>
+    
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large w3-teal">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="img_avatar.jpg" alt="avatar" style="width:75%">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="#">Movies</a>
+<a class="w3-bar-item w3-button" href="#">Friends</a>
+<a class="w3-bar-item w3-button" href="#">Messages</a>
+      
+</nav>
+    
+            <!-- old Nav Bar -->
+    <ul class="sidenav navList aboutCatering">
+      <li><a class="w3-black active" href="index.html">Home</a></li>
       <li><a href="Perfect-pancakes.html">Perfect Pancakes</a></li>
       <li><a href="cake.html">Chocolate Cake</a></li>
       <li><a href="Cupcakes.html">Cupcakes</a></li>
     </ul>
     
-   <!-- Background Image and website welcome -->
+    
+   <center><h1 class="aboutCatering">A Recipe For Success</h1></center> 
+    <!-- Background Image and website welcome -->
     <div class="content">
      <h1 class="aboutCatering"> </h1>
 
-      <center><img src="https://cdn.glitch.com/3f79a8da-1c59-4311-89b9-29dee5a09d84%2FBackground%20v2.jpg?v=1566876027954" alt="Background Image" class="responsive"  width="1080" height="400"> </center>
+      <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img title="Image Refrences: https://pixabay.com/pl/photos/kwiat-%C5%BCywno%C5%9Bci-nap%C3%B3j-przerwa-3343892/" src="https://cdn.glitch.com/3f79a8da-1c59-4311-89b9-29dee5a09d84%2FBackground%20v2.jpg?v=1566876027954" style="width:100%">
+  <div class="text">Introduction</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img title="Image Refrences: https://www.flickr.com/photos/theocrazzolara/40260472084" src="https://cdn.glitch.com/b008d4ce-ac4a-49e0-97d1-97482b5b42c8%2FPanackes.jpg?v=1572230311547" style="width:100%">
+  <div class="text">Fluffy Pancakes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img sitle="Image Refrences: https://www.pexels.com/photo/chocolate-cake-slice-1028711/" src="https://cdn.glitch.com/b008d4ce-ac4a-49e0-97d1-97482b5b42c8%2FChocolatcsdvsd.jpg?v=1572230553934" style="width:100%">
+  <div class="text">Chocolate cake</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+      
       
    <!-- About, shifted section -->
       <div class="w3-row w3-padding-64" id="about">
@@ -49,13 +102,11 @@ The term recipe is also used in medicine or in information technology (e.g., use
       <h1 class="w3-center aboutCatering">Our Menu</h1><br>
       
       <h4>Our Three Perfected Recipes:</h4>
-      
-      <p class="w3-text-grey aboutCatering">Brilliant Light, Fluffy Pancakes</p><br>
-    
-      <p class="w3-text-grey aboutCatering">Moist, Rich Chocolate Cake</p><br>
-    
-      <p class="w3-text-grey aboutCatering">Vanilla Based Cupcakes</p><br>
-    
+      <ul>
+        <li>Brilliant Light, Fluffy Pancakes</li>
+        <li>Moist, Rich Chocolate Cake</li>
+        <li>Vanilla Based Cupcakes</li>
+      </ul>
       </div>
     
     <div class="w3-col l6 w3-padding-large">
@@ -64,6 +115,18 @@ The term recipe is also used in medicine or in information technology (e.g., use
   </div>
     </div>
 <!-- End page content -->
+    
+    <!-- Mobile Nav Script -->
+    <script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>
